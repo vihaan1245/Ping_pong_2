@@ -1,0 +1,66 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <div class="btn btn-primary heading">
+                <h3>AI MARIO GAME</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Instructions </button>
+              </div>
+        
+              <img src="ball_touch_paddel.wav" class="big_image">
+              <br><br>
+              <button class="btn btn-success" onclick="startGame()" id="start"> Play Game </button>
+              <br><br>
+              <h3 id="status" class="btn btn-warning"></h3>
+              <br> <br>
+              <div id="canvas"></div>
+              <div class="game_sonsole"></div>
+              <button class="btn btn-warning" id="myButton" onclick="restart()">Restart</button>
+              <br> <br>
+              <h4 id="myFriend">
+                  We hitting tha free self promo || Created by prashant shukla || No copyright strikes now HAH
+              </h4> 
+
+              <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button class="close"data-dismiss="modal">&times;</button>
+                              <h4>Instructions</h4>
+                          </div>
+
+                          <div class="modal-body">
+                              <h4>
+                                  1. First keep your laptop screen straight
+                                  <br> <br>
+                                  2. Move yourself approximately 3-4 feet away from the laptop
+                                  <br> <br>
+                                  3. Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist
+                                  <br> <br>
+                                  4. Now press the play button, and again move yourself 3-4 feet away from the laptop
+                                  <br> <br>
+                                  5.The red paddel is your paddle,that will move as per the movement of your right wrist
+                              </h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </center>
+
+        <script src="main.js"></script>
+    </body>
+</html>
